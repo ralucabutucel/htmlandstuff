@@ -4,14 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>First Page</title>
+    <style>
+
+
+
+    <!-- Slide Show -->
+      <section>
+        <img class="mySlides" src="//Friesian-Horse.jpg"
+             style="width:100%">
+        <img class="mySlides" src="//dog-451643.jpg"
+             style="width:100%">
+        <img class="mySlides" src="//385650640_04f8406599_b.0.0.jpg.jpg"
+             style="width:100%">
+      </section>
+</style>
 </head>
-<body>
+
+<header> My First mage </header>
+<ul>
 <!-- Navigation -->
-<a href="#home" class="w3-button w3-bar-item">Home</a>
-<a href="#band" class="w3-button w3-bar-item">Band</a>
-<a href="#tour" class="w3-button w3-bar-item">Tour</a>
-<a href="#contact" class="w3-button w3-bar-item">Contact</a>
+    <ul id=”menu”>
+     <div>
+        <link>
+            <link>
+            <a href="#Home" class="button-bar">Home</a>
+                 <ul>
+                     <li><a href="# 1" class="button"> 1</a>></li>
+                     <li><a href="# 1" class="button"> 1</a>></li>
+                     <li><a href="# 1" class="button"> 1</a>></li>
+                     <li><a href="# 1" class="button"> 1</a>></li>
+                     <li><a href="# 1" class="button"> 1</a>></li>
+                 </ul>
+            </link>
 
-</body>
+            <link>
+            <a href="#Dogs" class="button-bar">Dogs</a>
+            <ul>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+            </ul>
+         </link>
 
+            <link>
+            <a href="#Cats" class="button-bar">Cats</a>
+         <ul>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+         </ul>
+         <link>
+
+            <link>
+            <a href="#Horses"class="button-bar">Horses</a>
+         <ul>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+             <li><a href="# 1" class="button"> 1</a>></li>
+         </ul>
+         </link>
+        </center>
+     </div>
+    </ul>
+
+<footer> </footer>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+    </body>
 </html>
