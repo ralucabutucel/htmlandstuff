@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<nav id="ddmenu">
+    <center> <title>Joy</title>
+    </center>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("doglove.jpg");
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 25px;
+            font-size: 25px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 60px;
+            box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+        a {
+            display:block;
+            width:10px;
+        }
+        ul {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li {
+            float:left;
+        }
+        a:link,a:visited {
+            display:block;
+            width:120px;
+            font-weight:bold;
+            font-size:17px;
+            color:#FFFFFF;
+            background-color:#d2691e;
+            text-align:center;
+            padding:4px;
+            text-decoration:none;
+        }
+        a:hover,a:active {
+            background-color:#daa520;
+        }
+
+
+    </style>
+    </head>
+
+    <center><h1>Joy</h1></center>
+    <!-- Navigation -->
+    <center>
+        <!-- Add information for the pop up login tab// or add the option to create an account -->
+        <div class="dropdown">
+            <button onclick="window.location.href='PAGE1.html'">Home</button>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Dogs</button>
+            <div class="dropdown-content">
+                <a href="Dogs/Dogs.html" class="button">Photos</a>
+                <a href="Dogs/Dogsvideo.html" class="button">Videos</a>
+                <a href="Dogs/Dogsadopt.html" class="button">Adopt</a>
+                <a href="Dogs/DogsStories.html" class="button">Stories</a>
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Cats</button>
+            <div class="dropdown-content">
+                <a href="Cats/Catphotos.html" class="button">Photos</a>
+                <a href="Cats/Catsvideos.html" class="button">Videos</a>
+                <a href="Cats/Catsadopt.html" class="button">Adopt</a>
+                <a href="Cats/Catsstories.html" class="button">Stories</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Horses</button>
+            <div class="dropdown-content">
+                <a href="Horses/Horses.html" class="button">Photos</a>
+                <a href="Horses/Horsesvideos.html" class="button">Videos</a>
+                <a href="Horses/Horsesadopt.html" class="button">Adopt</a>
+                <a href="Horses/HorsesStories.html" class="button">Stories</a>
+            </div>
+        </div>
+
+
+        <!-- Add information for the pop up login tab// or add the option to create an account -->
+        <div class="dropdown">
+            <button class="dropbtn">Login</button>
+
+        </div>
+        </div>
+
+    </center>
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+</nav>
+</body>
+</html>
